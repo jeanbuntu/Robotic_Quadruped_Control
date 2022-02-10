@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/10/21||18:15:41" using="Simscape Multibody Link Version 7.0" from="SolidWorks 24.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assembly" uid="Assembly" version="229">
+<AssemblyFile name="Assembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="floor-1" uid="floor-1" entityUid="floor*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-35.052656015062333 -2 10.917646452451223</Translation>
+</Transform>
+</Instance>
+<Instance name="FRF-1" uid="FRF-1" entityUid="FRF*:*Default">
+<Transform>
+<Rotation>0.79564033970934023 0.59771033802034756 -0.098482494133767251 -0.60063013114741526 0.79952701365109524 0 0.078739414431682447 0.059151553367289125 0.9951387834614791</Rotation>
+<Translation>-24.348556680631326 1.2706358173201644 7.4145746776125581</Translation>
+</Transform>
+</Instance>
+<Instance name="FLF-1" uid="FLF-1" entityUid="FLF*:*Default">
+<Transform>
+<Rotation>0.88564505282613037 0.45379955790392001 -0.098482494133767168 -0.45601635213676311 0.88997139649759516 0 0.087646602834794973 0.044909627724210706 0.9951387834614791</Rotation>
+<Translation>-24.83420484210728 1.9769994816835434 10.12994684749942</Translation>
+</Transform>
+</Instance>
+<Instance name="BRH-1" uid="BRH-1" entityUid="BRH*:*Default">
+<Transform>
+<Rotation>-0.73751211378155757 0.66811457129346596 -0.098482494133767043 -0.67137828652351816 -0.74111483346695006 1.1188966420050406e-16 -0.072986837239356547 0.066119008164091039 0.9951387834614791</Rotation>
+<Translation>-20.602093566989129 2.4259116653214559 8.0365593112117573</Translation>
+</Transform>
+</Instance>
+<Instance name="BLF-1" uid="BLF-1" entityUid="BLF*:*Default">
+<Transform>
+<Rotation>0.41537615563636165 0.90430296232952245 -0.098482494133767196 -0.90872044920609518 0.41740525295529346 3.1918911957973251e-16 0.041107110375573581 0.089493056308173433 0.9951387834614791</Rotation>
+<Translation>-21.645613690603721 1.7892413958117559 10.44550123508006</Translation>
+</Transform>
+</Instance>
+<Instance name="BRF-1" uid="BRF-1" entityUid="BRF*:*Default">
+<Transform>
+<Rotation>0.90494638264453342 0.41397251465256257 -0.098482494133767154 -0.41599475523665708 0.90936701260579822 1.0386656812411132e-16 0.089556731484391916 0.04096820104227189 0.9951387834614791</Rotation>
+<Translation>-20.410038674592712 1.3385386235612804 7.8043445095914228</Translation>
+</Transform>
+</Instance>
+<Instance name="body-1" uid="body-1" entityUid="body*:*Default">
+<Transform>
+<Rotation>0.99513878346147921 0.098482494133767015 0 0 0 1 0.098482494133767071 -0.9951387834614791 0</Rotation>
+<Translation>-21.853569789865055 3.0972899518449739 9.1688149512771506</Translation>
+</Transform>
+</Instance>
+<Instance name="BLH-1" uid="BLH-1" entityUid="BLH*:*Default">
+<Transform>
+<Rotation>-0.9751010788490474 0.19869344321495916 -0.098482494133768014 -0.19966405341356133 -0.97986441193384866 3.5540147214074835e-16 -0.096499491200163226 0.019663413969025739 0.99513878346147921</Rotation>
+<Translation>-21.061268143857593 2.8976258984314125 10.25210892003928</Translation>
+</Transform>
+</Instance>
+<Instance name="FLH-1" uid="FLH-1" entityUid="FLH*:*Default">
+<Transform>
+<Rotation>-0.93864588420543915 0.33052246884800712 -0.098482494133767376 -0.33213705901233359 -0.94323113499854205 0 -0.092891754719280642 0.03270968596578884 0.9951387834614791</Rotation>
+<Translation>-24.756583387194532 2.7651528928326408 9.8864073035185367</Translation>
+</Transform>
+</Instance>
+<Instance name="FRH-1" uid="FRH-1" entityUid="FRH*:*Default">
+<Transform>
+<Rotation>-0.78623287634299477 0.61003201760777581 -0.09848249413376714 -0.61301200168869696 -0.79007359517048592 2.3821924111779193e-16 -0.077808418201621557 0.060370950860236153 0.9951387834614791</Rotation>
+<Translation>-24.38258476753111 2.4842779501562768 7.662428377247867</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>1.8750000000000036 1.000001000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BLH-1</Uid>
+</InstancePath>
+<Position>-1 -8.8817841970012523e-16 0.25</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BLH-1</Uid>
+</InstancePath>
+<Position>1 -8.8817841970012523e-16 0.25</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BLF-1</Uid>
+</InstancePath>
+<Position>-1.0000000000000018 0 0.25</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>-1.8749999999999964 1.000001000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FLH-1</Uid>
+</InstancePath>
+<Position>-1.0000000000000036 0 0.25</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FLH-1</Uid>
+</InstancePath>
+<Position>0.99999999999999289 0 0.25</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FLF-1</Uid>
+</InstancePath>
+<Position>-0.99999999999999645 0 0.24999999999999822</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>1.8750000000000036 1.000001000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BRH-1</Uid>
+</InstancePath>
+<Position>-1 1.7763568394002505e-15 0.25</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BRH-1</Uid>
+</InstancePath>
+<Position>1 1.7763568394002505e-15 0.25</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>BRF-1</Uid>
+</InstancePath>
+<Position>-1 -8.8817841970012523e-16 0.25</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>-1.8749999999999964 1.000001000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FRH-1</Uid>
+</InstancePath>
+<Position>-1 0 0.25</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FRF-1</Uid>
+</InstancePath>
+<Position>-1 0 0.25</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>FRH-1</Uid>
+</InstancePath>
+<Position>1.0000000000000036 0 0.25</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>-2.5 1.0000000000000018 0.5</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BRH-1</Uid>
+</InstancePath>
+<Position>-1 1.7763568394002505e-15 0.25</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>-2.5 1.0000000000000018 0.5</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FRH-1</Uid>
+</InstancePath>
+<Position>-1 0 0.25</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>-2.5 -0.99999999999999822 0.5</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FLH-1</Uid>
+</InstancePath>
+<Position>-1.0000000000000036 0 1.7763568394002505e-15</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body-1</Uid>
+</InstancePath>
+<Position>-2.5 -0.99999999999999822 0.5</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BLH-1</Uid>
+</InstancePath>
+<Position>-1 -8.8817841970012523e-16 0</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FLH-1</Uid>
+</InstancePath>
+<Position>-1.0000000000000036 0 0.25</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FLF-1</Uid>
+</InstancePath>
+<Position>-0.99999999999999645 0 1.7763568394002505e-15</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BLH-1</Uid>
+</InstancePath>
+<Position>-1 -8.8817841970012523e-16 0.25</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BLF-1</Uid>
+</InstancePath>
+<Position>-1 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FRF-1</Uid>
+</InstancePath>
+<Position>-1 0 0.25</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>FRH-1</Uid>
+</InstancePath>
+<Position>-1 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BRH-1</Uid>
+</InstancePath>
+<Position>-1.0000000000000018 3.5527136788005009e-15 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>BRF-1</Uid>
+</InstancePath>
+<Position>-1 -8.8817841970012523e-16 0.25</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>floor-1</Uid>
+</InstancePath>
+<Position>0 2 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assembly</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="BLF" uid="BLF*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BLF.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617017</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652729 124.84425912890346 0 0 -2.1499852838598823e-14</Inertia>
+</MassProperties>
+<GeometryFile name="BLF_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BLH" uid="BLH*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BLH.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617023</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652729 124.84425912890346 0 0 -2.1499852838598826e-14</Inertia>
+</MassProperties>
+<GeometryFile name="BLH_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BRF" uid="BRF*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BRF.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617023</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652729 124.84425912890346 0 0 -2.1499852838598826e-14</Inertia>
+</MassProperties>
+<GeometryFile name="BRF_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="BRH" uid="BRH*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="BRH.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617017</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904352 120.39472426652729 124.84425912890346 0 0 -2.1499852838598826e-14</Inertia>
+</MassProperties>
+<GeometryFile name="BRH_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="FLF" uid="FLF*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="FLF.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617023</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652732 124.84425912890349 0 0 -2.1499852838598823e-14</Inertia>
+</MassProperties>
+<GeometryFile name="FLF_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="FLH" uid="FLH*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="FLH.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617023</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652729 124.84425912890346 0 0 -2.1499852838598823e-14</Inertia>
+</MassProperties>
+<GeometryFile name="FLH_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="FRF" uid="FRF*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="FRF.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617023</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652729 124.84425912890346 0 0 -2.1499852838598826e-14</Inertia>
+</MassProperties>
+<GeometryFile name="FRF_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="FRH" uid="FRH*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="FRH.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>274.54369260617023</Mass>
+<CenterOfMass>0 0 0.125</CenterOfMass>
+<Inertia>7.3093649936904361 120.39472426652729 124.84425912890346 0 0 -2.1499852838598823e-14</Inertia>
+</MassProperties>
+<GeometryFile name="FRH_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="body" uid="body*:*Default" version="144">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="body.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>9802.6972563434319</Mass>
+<CenterOfMass>-0.0002211528376002323 6.2010366594724369e-05 -4.8133220605383463e-05</CenterOfMass>
+<Inertia>4099.8250143541673 20969.660581685912 23404.820088505599 -0.30092433967450333 1.0732120333517015 -1.3826266097507305</Inertia>
+</MassProperties>
+<GeometryFile name="body_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="floor" uid="floor*:*Default" version="158">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="floor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>774999.99999984424</Mass>
+<CenterOfMass>24.999999999997698 1.1814516129033514 9.9824378154290659e-14</CenterOfMass>
+<Inertia>6667712.5336008333 170354166.66663855 164105212.53357518 7.6409244522975616e-08 -1.5621100844581521e-06 -1.3010291338892214e-06</Inertia>
+</MassProperties>
+<GeometryFile name="floor_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
